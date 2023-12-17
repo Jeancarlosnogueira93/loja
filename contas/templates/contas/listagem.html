@@ -8,17 +8,13 @@
 </head>
 
 <body>
-    <h1>Seja bem Vindo</h1>
-    
+    <h1>Teste de listagem</h1>
     <ul>
         {% for transacao in transacao %}
-        {% if transacao == 'JOAO' %}
-        <li><b>{{ transacao }}</b></li>
-        {% else %}
-        <li>{{ transacao }}</li>
-        {% endif %}
+            <li><a href="{% url 'url_update' transacao.id %}">{{transacao.descricao}}</a> - {{transacao.data }} - {{transacao.valor}} - {{transacao.categoria}}</li>
         {% endfor %}
     </ul>
+    <a href="{% url 'url_nova' %}">Novo</a>
 </body>
 
 </html>

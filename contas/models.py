@@ -1,5 +1,6 @@
 from django.db import models
 
+
 #Para criar banco de dados conforme a tipo de dados.
 
 class categoria(models.Model):
