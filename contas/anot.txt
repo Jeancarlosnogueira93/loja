@@ -1,0 +1,16 @@
+Comandos basicos para criar os projetos.
+
+instalação do pacote necessario para rodar o djando na maquina
+python instalado na maquina
+pip install django
+
+django-admin startproject "Nome do projeto"
+django-admin startapp "Nome da aplicação"
+
+criar a pasta templates para colocar os modelos de paginas criada em html.
+criar a condição do banco de dados.
+python manage.py makemigrations
+python manage.py migration
+
+Para debuggar no servidor local comando 
+python manage.py runserver 
