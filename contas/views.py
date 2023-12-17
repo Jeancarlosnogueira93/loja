@@ -3,13 +3,12 @@ from .models import transacao
 from .form import transacaoform
 import datetime
 
-
 #Para buscar a pagina nos templates
-
 def home(request):
     data = {}
     return render(request, 'contas/home.html', data)
 
+#Criar uma listagem de dados
 def listagem(request):
     data = {}
     data['transacao'] = transacao.objects.all()
